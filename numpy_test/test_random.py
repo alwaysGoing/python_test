@@ -4,6 +4,7 @@ import numpy as np
 
 # set the seed of random
 random.seed(0)
+np.random.seed(0)
 
 a = random.randrange(0, 10, 4)  # random.randrange(start, stop[, step])
 print(a)
