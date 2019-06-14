@@ -29,3 +29,4 @@ def student2dict(std):
     }
 
 print(json.dumps(s, default=student2dict))
+print(json.dumps(s, default=lambda obj: obj.__dict__))
