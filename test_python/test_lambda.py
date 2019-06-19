@@ -8,3 +8,6 @@ from functools import reduce
 n = 5
 a = reduce(lambda x, y: x*y, range(1, 1+n))
 print(a)
+
+a = lambda: 'none'
+print(a())

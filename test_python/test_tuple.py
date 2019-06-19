@@ -11,3 +11,7 @@ print(a[1])
 
 b = np.array(a)
 print(b.shape)
+
+a = tuple({'a': 1, 'n': 2})
+print(a)
+print(a[1])
