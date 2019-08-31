@@ -12,6 +12,10 @@ print(a)
 b = np.linspace(2999, 5998, 3000)
 print(b)
 c = np.random.randint(-1000, 1000, [3000])
+d = np.linspace(0, 2999, 3000, dtype=int)
+np.random.shuffle(d)
+d = d[:2500]
+c[d] = 0
 print(c)
 print(c.shape)
 b += c

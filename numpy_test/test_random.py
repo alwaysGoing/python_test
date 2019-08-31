@@ -1,10 +1,11 @@
 import random
+import time
 import math
 import numpy as np
 
 # set the seed of random
-random.seed(0)
-np.random.seed(0)
+# random.seed(0)
+# np.random.seed(0)
 
 a = random.randrange(0, 10, 4)  # random.randrange(start, stop[, step])
 print('randrange: ', a)
@@ -33,3 +34,8 @@ print('randint: ', a)
 a = np.arange(10)
 np.random.shuffle(a)
 print('a shuffled: ', a)
+
+for i in range(5):
+    a = np.random.uniform(1, 10, 10)
+    print('%d : ' % i, a)
+    time.sleep(1)

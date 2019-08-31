@@ -11,3 +11,7 @@ print(a)
 
 a = lambda: 'none'
 print(a())
+
+a = [4, 5, 1]
+b = sorted(range(len(a)), key=lambda k: a[k], reverse=True)
+print(b)
